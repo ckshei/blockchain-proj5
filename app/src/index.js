@@ -44,7 +44,6 @@ const App = {
     const lookid = document.getElementById("lookid").value;
     const starName = await this.meta.methods.lookUptokenIdToStarInfo(lookid).call();
     const starid = document.getElementById("starid");
-    console.log(starName)
     starid.innerHTML = `Star with id ${lookid} is called ${starName}`;
   }
 
